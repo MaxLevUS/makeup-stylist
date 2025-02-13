@@ -120,12 +120,13 @@ h1, h2, h3{
 /* about */
 
 #about{
-    background-color: #FFC0CB;
+    background-color: ;
 }
 .about-left{
     margin-bottom: 4rem;
     height: 480px;
     overflow: hidden;
+    border-radius: 5px;
     
 }
 /* button down and title -reusable */
@@ -181,12 +182,13 @@ h1, h2, h3{
     text-align: center;
 }
 .work-bottom > div .icon img{
-    width: 50px;
+    width: 100px;
     margin: 0 auto 1.7rem auto;
+    border-radius: 5px
 }
 /* Portfolio Grid - Ensures all images are uniform and fit in a 3x3 layout */
-#portfolio{
-    background-color: #FFC0CB;
+#about{
+    background-color: ;
 }
 
 .portfolio-grid .grid{
@@ -205,6 +207,7 @@ h1, h2, h3{
     width: 100%;
     height: 100%;
     object-fit: cover; /* Ensures images fill the space without distortion */
+    border-radius: 5px;
 }
 
 /* Lightbox Modal */
@@ -244,7 +247,7 @@ h1, h2, h3{
 
 /* contact */
 #contact{
-    background-color: rgba(255, 192, 203, 1)
+    background-color: white
 ;
 }
 .contact-content{
@@ -274,16 +277,23 @@ h1, h2, h3{
 .contact-left .btn-submit{
     padding: 1.4rem 3rem;
     font-family: 'Poppins', sans-serif;
-    background-color: var(--dark-color);
-    color: var(--light-color);
+    background-color: var(--light-color);
+    color: var(--dark-color);
     margin-top: 1rem;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 1.6rem;
     transition: var(--transition);
+    border-radius: 5px;
+
 }
 .contact-left .btn-submit:hover{
-    background-color: #000;
+    background-color: var(--dark-color);
+    color: white
+}
+
+.contact-right img{
+    border-radius: 5px;
 }
 
 #insta{
@@ -304,6 +314,7 @@ h1, h2, h3{
 .insta-grid > div img{
     height: 100%;
     object-fit: cover;
+    border-radius: 5px;
 }
 .insta-grid > div:hover{
     transform: scale(0.9);
@@ -312,7 +323,7 @@ h1, h2, h3{
 /* footer */
 #footer{
 
-    background-color: #FFC0CB;
+    background-color: var(--dark-color);
     color: var(--light-color);
 }
 .footer-content{
@@ -437,20 +448,22 @@ h1, h2, h3{
 .copyright {
     text-align: center;
     padding: 25px 0;
-    background-color: #d0ad94; /* Elegant warm beige tone */
-    color: white;
+    background-color: white; /* Elegant warm beige tone */
+    color: #d0ad94;
     font-size: 2rem;
     font-weight: 500;
 }
 
 .copyright a {
-    color: white;
+    color: #f8e1d4;
     text-decoration: none;
     transition: color 0.3s ease;
+    border-radius: 5px;
 }
 
 .copyright a:hover {
-    color: #f8e1d4; /* Lighter shade for hover effect */
+    color: white; /* Lighter shade for hover effect */
+    background-color: #d0ad94;
 }
 
 
