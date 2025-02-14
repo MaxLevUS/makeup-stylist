@@ -125,6 +125,10 @@ h3 {
 .social-links li a:hover {
   opacity: 0.9;
 }
+.contact-left a {
+  color: white !important;
+  text-decoration: none;
+}
 
 /* about */
 
