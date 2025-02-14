@@ -128,14 +128,11 @@ h3 {
 
 /* about */
 
-#about {
-  background-color: ;
-}
 .about-left {
   margin-bottom: 4rem;
   height: 480px;
   overflow: hidden;
-  border-radius: 5px;
+  border-radius: 15px;
 }
 /* button down and title -reusable */
 .btn-down {
