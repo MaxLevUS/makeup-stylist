@@ -24,7 +24,7 @@
       <div class="container">
         <div class="header-content">
           <h1>
-            My name is Anna and I'm a <br /><span
+            I'm Anna a <br /><span
               class="typewrite"
               data-loop="yes"
               data-speed="100"
@@ -477,9 +477,10 @@
     <!-------------------------------- end of footer -------------------------------->
 
     <section class="copyright">
-      <a href="https://maxlevus.github.io/Maksim-Portfolio/"
-        >Copyright © 2025 by Maksim Levanovich || All Rights Reserved.</a
-      >
+      <a href="https://maxlevus.github.io/Maksim-Portfolio/">
+        Copyright © <span id="currentYear"></span> by Maksim Levanovich || All
+        Rights Reserved.
+      </a>
     </section>
 
     <!---------------------- typewriting ----------------------->
@@ -517,6 +518,13 @@
             document.getElementById("lightbox-modal").style.display = "none";
           }
         });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const yearElement = document.getElementById("currentYear");
+        if (yearElement) {
+          yearElement.textContent = new Date().getFullYear();
+        }
+      });
     </script>
   </body>
 </html>
