@@ -441,6 +441,11 @@ h3 {
     background-position: center center;
     min-height: 100vh;
   }
+  #work {
+    background-attachment: scroll !important;
+    background-position: center center;
+    background-size: cover;
+  }
 }
 
 @media (min-width: 992px) {
