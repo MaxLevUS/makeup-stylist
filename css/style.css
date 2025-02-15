@@ -442,6 +442,7 @@ h3 {
     min-height: 100vh;
   }
   #work {
+    background: url("../images/background.jpg") center/cover no-repeat !important;
     background-attachment: scroll !important;
     background-position: center center;
     background-size: cover;
