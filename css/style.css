@@ -177,7 +177,9 @@ h3 {
 /* work */
 
 #work {
-  background: url("../images/background.jpg") center/cover no-repeat fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+    url("../images/background.jpg") center/cover no-repeat fixed;
+  min-height: 100vh;
   color: var(--light-color);
 }
 #work .title h2,
@@ -442,9 +444,11 @@ h3 {
     min-height: 100vh;
   }
   #work {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+      url("../images/background-mobile.jpg") center/cover no-repeat !important;
     background-attachment: scroll !important;
     background-position: center center;
-    background-size: cover;
+    min-height: 100vh;
   }
 }
 
