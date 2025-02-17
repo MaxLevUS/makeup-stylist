@@ -445,7 +445,7 @@ h3 {
   }
   #work {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
-      url("../images/background-mobile.jpg") center/cover no-repeat !important;
+      url("../images/background.jpg") center/cover no-repeat !important;
     background-attachment: scroll !important;
     background-position: center center;
     min-height: 100vh;
