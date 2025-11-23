@@ -298,8 +298,7 @@ h3 {
 }
 .contact-left .btn-submit:hover {
   background-color: var(--light-color); 
-  color: white;
-}
+  color: var(--dark-color);
 
 .contact-right img {
   border-radius: 5px;
