@@ -1,3 +1,4 @@
 User-agent: *
-Disallow:
-Sitemap: https://www.makeupsalonanna.com/sitemap.xml
+Allow: /
+
+Sitemap: https://makeupsalonanna.com/sitemap.xml
