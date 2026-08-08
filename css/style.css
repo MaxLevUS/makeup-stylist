@@ -2966,3 +2966,60 @@ textarea:focus-visible {
       none !important;
   }
 }
+
+
+/* ==========================================================
+   CONTACT IMAGE FIX
+   Show the complete image without cropping
+   ========================================================== */
+
+.contact-content {
+  align-items: start;
+}
+
+.contact-right {
+  height: auto !important;
+  align-self: start;
+  overflow: hidden;
+}
+
+.contact-right img {
+  display: block;
+  width: 100%;
+  height: auto !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+}
+
+
+/* ==========================================================
+   FORM SUCCESS / ERROR MESSAGE
+   ========================================================== */
+
+.form-status {
+  display: none;
+  margin-top: 18px;
+  padding: 15px 18px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.form-status.success {
+  display: block;
+  border: 1px solid #b9d7c0;
+  color: #285c35;
+  background-color: #edf7ef;
+}
+
+.form-status.error {
+  display: block;
+  border: 1px solid #e2b8b8;
+  color: #8a3030;
+  background-color: #fff0f0;
+}
+
+#submitButton:disabled {
+  cursor: wait;
+  opacity: 0.7;
+}
