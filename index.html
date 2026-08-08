@@ -1341,5 +1341,60 @@
        */
       requestParallaxUpdate();
     </script>
+
+<script>
+  const contactForm = document.getElementById("contactForm");
+  const formStatus = document.getElementById("formStatus");
+  const submitButton = document.getElementById("submitButton");
+
+  if (contactForm) {
+    contactForm.addEventListener("submit", async function (event) {
+      event.preventDefault();
+
+      formStatus.className = "form-status";
+      formStatus.textContent = "";
+
+      submitButton.disabled = true;
+      submitButton.textContent = "Sending...";
+
+      try {
+        const formData = new FormData(contactForm);
+        const formObject = Object.fromEntries(formData.entries());
+
+        const response = await fetch(contactForm.action, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json"
+          },
+          body: JSON.stringify(formObject)
+        });
+
+        const result = await response.json();
+
+        if (!response.ok) {
+          throw new Error("Form submission failed");
+        }
+
+        formStatus.textContent =
+          "Thank you! Your request has been sent successfully. I’ll get back to you as soon as possible.";
+
+        formStatus.classList.add("success");
+
+        contactForm.reset();
+      } catch (error) {
+        formStatus.textContent =
+          "Sorry, something went wrong. Please try again or contact me directly by phone or email.";
+
+        formStatus.classList.add("error");
+      } finally {
+        submitButton.disabled = false;
+        submitButton.textContent = "Send Request";
+      }
+    });
+  }
+</script>
+
+    
   </body>
 </html>
