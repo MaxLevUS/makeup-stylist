@@ -2,57 +2,95 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Makeup Salon Ana - Professional Makeup & Hair Styling</title>
-    <meta name="robots" content="index, follow" />
 
-    <!--SEO Meta Tags-->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+
+    <title>Bridal Hair & Makeup Artist in Minnesota | Ana Lev</title>
+
     <meta
       name="description"
-      content="Makeup Salon Ana - Offering professional makeup and hair styling services for weddings, parties, and events. Book your appointment today!"
+      content="Professional bridal hair and makeup by Ana Lev in Minnesota. Bridal makeup, wedding hairstyles, trials, bridesmaid services and special event styling."
     />
-    <meta
-      name="keywords"
-      content="makeup artist, hair stylist, wedding makeup, bridal hair, beauty salon"
-    />
-    <meta name="author" content="Anna Lev" />
 
-    <!--Favicon Icons-->
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Ana Lev" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://makeupsalonanna.com/" />
+
+    <!-- Open Graph / Social Preview -->
+    <meta
+      property="og:title"
+      content="Bridal Hair & Makeup Artist in Minnesota | Ana Lev"
+    />
+
+    <meta
+      property="og:description"
+      content="Professional bridal hair and makeup services in Minnesota by Ana Lev."
+    />
+
+    <meta property="og:type" content="website" />
+
+    <meta property="og:url" content="https://makeupsalonanna.com/" />
+
+    <meta
+      property="og:image"
+      content="https://makeupsalonanna.com/images/portfolio-main.jpg"
+    />
+
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Favicons -->
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="./images/favicon-16x16.png"
+      href="images/favicon-16x16.png"
     />
+
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="images/favicon-32x32.png"
     />
+
     <link
       rel="icon"
       type="image/png"
       sizes="192x192"
-      href="./images/android-chrome-192x192.png"
+      href="images/android-chrome-192x192.png"
     />
+
     <link
       rel="icon"
       type="image/png"
       sizes="512x512"
-      href="./images/android-chrome-512x512.png"
+      href="images/android-chrome-512x512.png"
     />
+
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="./images/apple-touch-icon.png"
+      href="images/apple-touch-icon.png"
     />
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
-    <link rel="icon" type="image/webp" href="images/favicon.webp" />
-    <link rel="icon" type="image/jpeg" href="images/favicon.jpg" />
 
-    <!--Font Awesome-->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
@@ -61,538 +99,1229 @@
       referrerpolicy="no-referrer"
     />
 
+    <!-- Main CSS -->
     <link rel="stylesheet" href="css/style.css" />
 
-    <!--Structured Data for SEO-->
+    <!-- Structured Data -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
-        "name": "Makeup Salon Ana",
-        "image": "https://www.makeupsalonanna.com/images/logo.png",
+        "name": "Ana Lev Bridal Hair & Makeup",
+        "description": "Professional bridal hair and makeup services for weddings, special events and photoshoots in Minnesota.",
+        "url": "https://makeupsalonanna.com/",
+        "image": "https://makeupsalonanna.com/images/portfolio-main.jpg",
         "telephone": "+16122426898",
         "email": "anastasiyalv1007@gmail.com",
+        "areaServed": {
+          "@type": "State",
+          "name": "Minnesota"
+        },
         "address": {
           "@type": "PostalAddress",
-          "addressRegion": "Minnesota",
+          "addressRegion": "MN",
           "addressCountry": "US"
         },
-        "url": "https://www.makeupsalonanna.com"
+        "sameAs": [
+          "https://www.facebook.com/profile.php?id=100023951333590&sk=photos_by",
+          "https://www.instagram.com/anastasialv89/",
+          "https://www.tiktok.com/@anastasialv89"
+        ]
       }
     </script>
   </head>
 
   <body>
-    <!--header-->
+    <!-- ======================================================
+         HEADER / HERO
+         ====================================================== -->
 
-    <header id="header" class="vh-100 flex">
-      <div class="container">
+    <header id="header" class="parallax-section hero">
+      <!--
+        This separate background element replaces
+        background-attachment: fixed.
+
+        JavaScript below keeps it fixed relative to the viewport,
+        including on iPhone / Safari.
+      -->
+      <div
+        class="parallax-bg parallax-bg-header"
+        aria-hidden="true"
+      ></div>
+
+      <div class="hero-overlay" aria-hidden="true"></div>
+
+      <!-- Navigation -->
+      <nav class="main-nav" aria-label="Main navigation">
+        <div class="container nav-container">
+          <a href="#header" class="brand" aria-label="Ana Lev home">
+            Ana Lev
+          </a>
+
+          <ul class="nav-links">
+            <li>
+              <a href="#about">About</a>
+            </li>
+
+            <li>
+              <a href="#work">Services</a>
+            </li>
+
+            <li>
+              <a href="#portfolio">Portfolio</a>
+            </li>
+
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container hero-container">
         <div class="header-content">
+          <p class="hero-eyebrow">
+            Bridal Beauty • Minnesota
+          </p>
+
+          <!-- Static SEO H1 -->
           <h1>
-            I'm Ana, a <br />
+            Bridal Hair &amp;
+            <br />
+            Makeup Artist
+            <br />
+            in Minnesota
+          </h1>
+
+          <p class="hero-intro">
+            I'm Ana —
             <span
               class="typewrite"
               data-loop="yes"
               data-speed="100"
               data-delay="2000"
-              data-words='["makeup artist", "hair artist", "wedding hair and makeup artist"]'
-            ></span>
-          </h1>
-          <h2>Ana Lev</h2>
+              data-words='["bridal makeup artist", "bridal hairstylist", "wedding hair and makeup artist"]'
+            >
+              bridal makeup artist
+            </span>
+          </p>
 
-          <ul class="social-links">
+          <div class="hero-buttons">
+            <a href="#portfolio" class="btn btn-primary">
+              View Portfolio
+            </a>
+
+            <a href="#contact" class="btn btn-outline">
+              Book Your Date
+            </a>
+          </div>
+
+          <ul class="social-links" aria-label="Social media">
+            <!-- Facebook -->
             <li>
               <a
                 href="https://www.facebook.com/profile.php?id=100023951333590&sk=photos_by"
                 target="_blank"
-                class="flex"
+                rel="noopener noreferrer"
+                aria-label="Ana Lev on Facebook"
               >
-                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-facebook-f" aria-hidden="true"></i>
               </a>
             </li>
 
+            <!-- TikTok -->
             <li>
               <a
-                href="https://www.tiktok.com/@anastasialv89?_t=ZT-8tyqTMaayuB&_r=1"
+                href="https://www.tiktok.com/@anastasialv89"
                 target="_blank"
-                class="flex"
+                rel="noopener noreferrer"
+                aria-label="Ana Lev on TikTok"
               >
-                <i class="fab fa-tiktok"></i>
+                <i class="fab fa-tiktok" aria-hidden="true"></i>
               </a>
             </li>
 
-            <li>
-              <a
-                href="https://www.instagram.com/anastasialv89/"
-                target="_blank"
-                class="flex"
-              >
-                <i class="fab fa-instagram"></i>
-              </a>
-            </li>
-
+            <!-- Instagram -->
             <li>
               <a
                 href="https://www.instagram.com/anastasialv89/"
                 target="_blank"
-                class="flex"
+                rel="noopener noreferrer"
+                aria-label="Ana Lev on Instagram"
               >
-                <i class="fab fa-pinterest"></i>
+                <i class="fab fa-instagram" aria-hidden="true"></i>
               </a>
             </li>
           </ul>
         </div>
       </div>
     </header>
-    <!--end of header-->
 
-    <!--main content-->
+    <!-- ======================================================
+         MAIN
+         ====================================================== -->
 
     <main>
-      <!--about section-->
-      <section id="about" class="about py-7">
+      <!-- ====================================================
+           ABOUT
+           ==================================================== -->
+
+      <section id="about" class="section about-section">
         <div class="container">
-          <div class="about-content grid">
-            <div class="about-left">
-              <img src="images/portfolio-main.jpg " alt="main-photo" />
+          <div class="about-content">
+            <div class="about-image">
+              <img
+                src="images/portfolio-main.jpg"
+                alt="Ana Lev bridal hair and makeup artist"
+              />
             </div>
 
-            <div class="about-right">
-              <div class="title">
-                <h2>✨ About Me ✨</h2>
+            <div class="about-text">
+              <div class="section-heading">
+                <p class="section-label">About Me</p>
+
+                <h2>
+                  Beauty Designed
+                  <br />
+                  Around You
+                </h2>
               </div>
 
-              <p class="lead">
-                Welcome to my world of beauty and transformation! 💄✨
+              <p class="intro-text">
+                Welcome to my world of beauty and transformation.
               </p>
 
               <p>
-                I’m Ana, a passionate makeup artist and hairstylist with years
-                of experience in wedding, party, and special occasion glam. My
-                mission is to enhance natural beauty while creating a flawless,
-                radiant look that makes you feel confident and stunning.
+                I’m Ana, a passionate makeup artist and hairstylist with
+                years of experience creating looks for weddings, parties,
+                photoshoots and special occasions.
               </p>
-              <br />
 
               <p>
-                From bridal elegance to glamorous party styles, I specialize in
-                customizing each look to match your personality, skin tone, and
-                event theme. With a keen eye for detail and a love for
-                creativity, I ensure every client shines on their special day.
+                My goal is to enhance your natural beauty while creating a
+                polished, radiant look that helps you feel confident and
+                beautiful throughout your special day.
               </p>
-              <br />
 
               <p>
-                Beauty is not just about makeup—it's about feeling your best
-                from the inside out. Let’s bring your dream look to life! 💕
-              </p>
-              <br />
-
-              <p>📍 Available for weddings, events, and personal styling.</p>
-              <br />
-
-              <p class="lead">
-                📩 Contact me today for bookings and consultations!
+                From bridal elegance to glamorous event styling, each look is
+                customized to complement your features, personal style and
+                event.
               </p>
 
-              <a href="#work" class="btn-down">
-                <i class="fas fa-chevron-down"></i>
+              <p class="location-text">
+                <i class="fas fa-location-dot" aria-hidden="true"></i>
+                On-location bridal hair and makeup services available in
+                Minnesota and surrounding areas.
+              </p>
+
+              <a href="#work" class="text-link">
+                Explore Services
+                <i class="fas fa-arrow-down" aria-hidden="true"></i>
               </a>
             </div>
           </div>
         </div>
       </section>
-      <!--end of about section-->
 
-      <!--work section-->
-      <section id="work" class="vh-100 flex py-7">
-        <div class="container">
-          <div class="work-content">
-            <div class="title">
-              <h2>what am i doing?</h2>
+      <!-- ====================================================
+           SERVICES / PRICING
+           ==================================================== -->
+
+      <section id="work" class="parallax-section services-section">
+        <div
+          class="parallax-bg parallax-bg-work"
+          aria-hidden="true"
+        ></div>
+
+        <div class="section-dark-overlay" aria-hidden="true"></div>
+
+        <div class="container section-content">
+          <div class="section-heading section-heading-light">
+            <p class="section-label">Services</p>
+
+            <h2>
+              Bridal Hair &amp;
+              <br />
+              Makeup Services
+            </h2>
+
+            <p class="section-description">
+              Professional beauty services for brides, bridal parties,
+              photoshoots, proms and special events.
+            </p>
+          </div>
+
+          <div class="services-grid">
+            <!-- Bridal Makeup -->
+            <article class="service-card">
+              <div class="service-number">01</div>
+
+              <h3>Bridal Makeup</h3>
+
+              <div class="service-price">
+                $150
+              </div>
+
+              <p>
+                Approximately 60 minutes.
+              </p>
+
+              <p>
+                Full bridal makeup application including false lashes and a
+                lip touch-up kit.
+              </p>
+            </article>
+
+            <!-- Bridesmaids Makeup -->
+            <article class="service-card">
+              <div class="service-number">02</div>
+
+              <h3>Bridesmaids &amp; Guests Makeup</h3>
+
+              <div class="service-price">
+                $100
+              </div>
+
+              <p>
+                Approximately 40 minutes.
+              </p>
+
+              <p>
+                Full face makeup application including false lashes.
+              </p>
+            </article>
+
+            <!-- Bridal Hair -->
+            <article class="service-card">
+              <div class="service-number">03</div>
+
+              <h3>Bridal Hair</h3>
+
+              <div class="service-price">
+                $150
+              </div>
+
+              <p>
+                Approximately 60 minutes.
+              </p>
+
+              <p>
+                Bridal hairstyle customized for your wedding look and
+                personal style.
+              </p>
+            </article>
+
+            <!-- Bridesmaids Hair -->
+            <article class="service-card">
+              <div class="service-number">04</div>
+
+              <h3>Bridesmaids &amp; Guests Hair</h3>
+
+              <div class="service-price">
+                $100
+              </div>
+
+              <p>
+                Approximately 40 minutes.
+              </p>
+
+              <p>
+                Professional hairstyling for bridesmaids and wedding guests.
+              </p>
+            </article>
+
+            <!-- Trial -->
+            <article class="service-card">
+              <div class="service-number">05</div>
+
+              <h3>Bridal Trial</h3>
+
+              <div class="service-price">
+                $120
+              </div>
+
+              <p>
+                Approximately 60 minutes.
+              </p>
+
+              <p>
+                Preview and refine your bridal hair or makeup look before the
+                wedding day.
+              </p>
+            </article>
+
+            <!-- Events -->
+            <article class="service-card">
+              <div class="service-number">06</div>
+
+              <h3>Special Events</h3>
+
+              <div class="service-price">
+                $120
+              </div>
+
+              <p>
+                Photoshoots, prom and other special occasions.
+              </p>
+
+              <p>
+                Professional makeup application or hairstyling customized for
+                your event.
+              </p>
+            </article>
+          </div>
+
+          <div class="service-features">
+            <div class="feature">
+              <span class="icon">
+                <img
+                  src="images/makeup-icon.webp"
+                  alt=""
+                  loading="lazy"
+                />
+              </span>
+
+              <h3>Wedding Makeup</h3>
             </div>
 
-            <ul class="work-top grid">
-              <li class="lead">
-                ✨
-                <h2>Bridal Makeup Pricing</h2>
-                <br />
-                <p>
-                  $150 Bridal Makeup 60 minutes face application including false
-                  lashes Lip touch up kit provided
-                </p>
-                <br />
+            <div class="feature">
+              <span class="icon">
+                <img
+                  src="images/makeup-icon2.webp"
+                  alt=""
+                  loading="lazy"
+                />
+              </span>
 
-                <p>
-                  $100 Bridesmaid & Guests 40 munutes Bridesmaids receive a full
-                  face application including false lashes
-                </p>
-                <p>
-                  <br />
-                </p>
-
-                <p>$120 Bridal Trial 60 minutes</p>
-                <br />
-                <hr />
-              </li>
-
-              <li class="lead">
-                ✨
-                <h2>Bridal Hairstyle Pricing</h2>
-                <br />
-                <p>$150 Bridal Hair 60 minutes</p>
-                <br />
-                <br />
-                <p>$100 Bridesmaid & Guests Hair 40 munutes</p>
-                <br />
-                <br />
-                <p>$120 Bridal Trial 60 minutes</p>
-                <br />
-                <hr />
-              </li>
-
-              <li class="lead">
-                ✨
-                <h2>Professional Makeup Application</h2>
-                <br />
-                <p>Photoshoot, Prom and Any Other Events $120</p>
-                <br />
-
-                <p>Full face application including false lashes 60 minutes</p>
-                <br />
-                <hr />
-              </li>
-
-              <li class="lead">
-                ✨
-                <h2>Personal Hairstyle</h2>
-                <br />
-                <p>Photoshoot, Prom and Any Other Events $120</p>
-                <br />
-                <p>60 minutes</p>
-                <br />
-                <hr />
-              </li>
-
-              <li class="lead">
-                ✨ **Personalized Beauty Consultations** – Enhancing your
-                natural features with expert beauty guidance.
-              </li>
-
-              <li class="lead">
-                ✨ **Always Prepared** – Equipped with **backup tools and
-                products** for a stress-free and seamless experience.
-              </li>
-            </ul>
-
-            <div class="work-bottom grid">
-              <div>
-                <span class="icon"
-                  ><img src="images/makeup-icon.webp" alt="makeup-icon"
-                /></span>
-                <h3>Wedding makeup</h3>
-              </div>
-
-              <div>
-                <span class="icon"
-                  ><img src="images/makeup-icon2.webp" alt="makeup-icon"
-                /></span>
-                <h3>Wedding hair</h3>
-              </div>
-
-              <div>
-                <span class="icon"
-                  ><img src="images/makeup-icon3.webp" alt="makeup-icon"
-                /></span>
-                <h3>Evening makeup</h3>
-              </div>
-
-              <div>
-                <span class="icon"
-                  ><img src="images/makeup-icon4.webp" alt="makeup-icon"
-                /></span>
-                <h3>Evening hair</h3>
-              </div>
+              <h3>Wedding Hair</h3>
             </div>
 
-            <a href="#portfolio" class="btn-down btn-down-white">
-              <i class="fas fa-chevron-down"></i>
+            <div class="feature">
+              <span class="icon">
+                <img
+                  src="images/makeup-icon3.webp"
+                  alt=""
+                  loading="lazy"
+                />
+              </span>
+
+              <h3>Event Makeup</h3>
+            </div>
+
+            <div class="feature">
+              <span class="icon">
+                <img
+                  src="images/makeup-icon4.webp"
+                  alt=""
+                  loading="lazy"
+                />
+              </span>
+
+              <h3>Event Hair</h3>
+            </div>
+          </div>
+
+          <div class="center-button">
+            <a href="#portfolio" class="btn btn-outline">
+              View My Work
             </a>
           </div>
         </div>
       </section>
-      <!--end of work section-->
 
-      <!--portfolio section-->
-      <section id="portfolio" class="vh-100 py-7">
+      <!-- ====================================================
+           PORTFOLIO
+           ==================================================== -->
+
+      <section id="portfolio" class="section portfolio-section">
         <div class="container">
-          <div class="portfolio-content">
-            <div class="title">
-              <h2>my last works</h2>
-              <a href="#contact" class="btn-down">
-                <i class="fas fa-chevron-down"></i>
-              </a>
-            </div>
+          <div class="section-heading">
+            <p class="section-label">Portfolio</p>
 
-            <div class="portfolio-grid grid">
-              <div>
-                <a href="#" class="lightbox" data-image="images/portfolio1.jpg"
-                  ><img src="images/portfolio1.jpg" alt="makeup picture"
-                /></a>
-              </div>
-              <div>
-                <a href="#" class="lightbox" data-image="images/portfolio2.jpg"
-                  ><img src="images/portfolio2.jpg" alt="makeup picture"
-                /></a>
-              </div>
-              <div>
-                <a href="#" class="lightbox" data-image="images/portfolio3.jpg"
-                  ><img src="images/portfolio3.jpg" alt="makeup picture"
-                /></a>
-              </div>
+            <h2>
+              Bridal Hair &amp;
+              <br />
+              Makeup Portfolio
+            </h2>
 
-              <div>
-                <a href="#" class="lightbox" data-image="images/portfolio4.jpg"
-                  ><img src="images/portfolio4.jpg" alt="makeup picture"
-                /></a>
-              </div>
+            <p class="section-description dark-description">
+              A selection of recent bridal, beauty and special event looks.
+            </p>
+          </div>
 
-              <div>
-                <a href="#" class="lightbox" data-image="images/portfolio5.jpg"
-                  ><img src="images/portfolio5.jpg" alt="makeup picture"
-                /></a>
-              </div>
+          <div class="portfolio-grid">
+            <!-- 1 -->
+            <button
+              class="portfolio-item lightbox"
+              type="button"
+              data-image="images/portfolio1.jpg"
+              aria-label="Open portfolio image 1"
+            >
+              <img
+                src="images/portfolio1.jpg"
+                alt="Bridal hair and makeup portfolio look"
+                loading="lazy"
+              />
+            </button>
 
-              <div>
-                <a href="#" class="lightbox" data-image="images/portfolio6.jpg"
-                  ><img src="images/portfolio6.jpg" alt="makeup picture"
-                /></a>
-              </div>
+            <!-- 2 -->
+            <button
+              class="portfolio-item lightbox"
+              type="button"
+              data-image="images/portfolio2.jpg"
+              aria-label="Open portfolio image 2"
+            >
+              <img
+                src="images/portfolio2.jpg"
+                alt="Professional bridal makeup portfolio look"
+                loading="lazy"
+              />
+            </button>
 
-              <div>
-                <a href="#" class="lightbox" data-image="images/portfolio7.jpg"
-                  ><img src="images/portfolio7.jpg" alt="makeup picture"
-                /></a>
-              </div>
+            <!-- 3 -->
+            <button
+              class="portfolio-item lightbox"
+              type="button"
+              data-image="images/portfolio3.jpg"
+              aria-label="Open portfolio image 3"
+            >
+              <img
+                src="images/portfolio3.jpg"
+                alt="Wedding hair and makeup portfolio look"
+                loading="lazy"
+              />
+            </button>
 
-              <div>
-                <a href="#" class="lightbox" data-image="images/portfolio8.jpg"
-                  ><img src="images/portfolio8.jpg" alt="makeup picture"
-                /></a>
-              </div>
+            <!-- 4 -->
+            <button
+              class="portfolio-item lightbox"
+              type="button"
+              data-image="images/portfolio4.jpg"
+              aria-label="Open portfolio image 4"
+            >
+              <img
+                src="images/portfolio4.jpg"
+                alt="Professional beauty styling portfolio look"
+                loading="lazy"
+              />
+            </button>
 
-              <div>
-                <a href="#" class="lightbox" data-image="images/portfolio9.jpg"
-                  ><img src="images/portfolio9.jpg" alt="makeup picture"
-                /></a>
-              </div>
-            </div>
+            <!-- 5 -->
+            <button
+              class="portfolio-item lightbox"
+              type="button"
+              data-image="images/portfolio5.jpg"
+              aria-label="Open portfolio image 5"
+            >
+              <img
+                src="images/portfolio5.jpg"
+                alt="Bridal beauty portfolio by Ana Lev"
+                loading="lazy"
+              />
+            </button>
 
-            <!--Lightbox Modal-->
-            <div id="lightbox-modal" class="lightbox-modal">
-              <span class="close-lightbox">&times;</span>
-              <img id="lightbox-img" src="#" alt="Expanded-Image" />
-            </div>
+            <!-- 6 -->
+            <button
+              class="portfolio-item lightbox"
+              type="button"
+              data-image="images/portfolio6.jpg"
+              aria-label="Open portfolio image 6"
+            >
+              <img
+                src="images/portfolio6.jpg"
+                alt="Wedding beauty styling portfolio"
+                loading="lazy"
+              />
+            </button>
+
+            <!-- 7 -->
+            <button
+              class="portfolio-item lightbox"
+              type="button"
+              data-image="images/portfolio7.jpg"
+              aria-label="Open portfolio image 7"
+            >
+              <img
+                src="images/portfolio7.jpg"
+                alt="Professional hair and makeup portfolio"
+                loading="lazy"
+              />
+            </button>
+
+            <!-- 8 -->
+            <button
+              class="portfolio-item lightbox"
+              type="button"
+              data-image="images/portfolio8.jpg"
+              aria-label="Open portfolio image 8"
+            >
+              <img
+                src="images/portfolio8.jpg"
+                alt="Bridal hairstyle and makeup portfolio"
+                loading="lazy"
+              />
+            </button>
+
+            <!-- 9 -->
+            <button
+              class="portfolio-item lightbox"
+              type="button"
+              data-image="images/portfolio9.jpg"
+              aria-label="Open portfolio image 9"
+            >
+              <img
+                src="images/portfolio9.jpg"
+                alt="Wedding makeup and hairstyling portfolio"
+                loading="lazy"
+              />
+            </button>
           </div>
         </div>
       </section>
-      <!--end of portfolio section-->
 
-      <!--contact section-->
-      <section id="contact" class="py-7">
+      <!-- ====================================================
+           CONTACT
+           ==================================================== -->
+
+      <section id="contact" class="section contact-section">
         <div class="container">
-          <div class="contact-content flex">
+          <div class="contact-content">
             <div class="contact-left">
-              <div class="title">
-                <h2>contact with me</h2>
+              <div class="section-heading">
+                <p class="section-label">Contact</p>
+
+                <h2>
+                  Book Your
+                  <br />
+                  Appointment
+                </h2>
               </div>
 
-              <p class="lead">
-                <i class="fas fa-phone-alt"></i>
-                <a
-                  href="tel:+16122426898"
-                  style="color: inherit; text-decoration: none"
-                  >612 242-6898</a
-                >
+              <p class="contact-intro">
+                Planning a wedding or special event? Send me your date and
+                details and I’ll get back to you as soon as possible.
               </p>
 
-              <p class="lead">
-                <i class="fas fa-envelope"></i>
+              <div class="contact-details">
+                <a href="tel:+16122426898" class="contact-detail">
+                  <span class="contact-icon">
+                    <i class="fas fa-phone" aria-hidden="true"></i>
+                  </span>
+
+                  <span>
+                    <small>Phone</small>
+                    612-242-6898
+                  </span>
+                </a>
+
                 <a
                   href="mailto:anastasiyalv1007@gmail.com"
-                  style="color: inherit; text-decoration: none"
+                  class="contact-detail"
                 >
-                  annaLevMakeup@gmail.com
-                </a>
-              </p>
+                  <span class="contact-icon">
+                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                  </span>
 
-              <!--Updated Form for Email Submission-->
+                  <span>
+                    <small>Email</small>
+                    anastasiyalv1007@gmail.com
+                  </span>
+                </a>
+              </div>
+
+              <!--
+                IMPORTANT:
+                Current FormSubmit email is:
+                anastasiyalv1007@gmail.com
+
+                If you later want to use another email,
+                change it here AND in the mailto above
+                AND in Structured Data at the top.
+              -->
+
               <form
+                class="contact-form"
                 action="https://formsubmit.co/anastasiyalv1007@gmail.com"
                 method="POST"
               >
+                <!-- Spam protection -->
                 <input
                   type="text"
-                  class="form-control"
-                  name="name"
-                  placeholder="Your name and short message here..."
-                  required
-                />
-                <input
-                  type="email"
-                  class="form-control"
-                  name="email"
-                  placeholder="Your email here"
-                  required
+                  name="_honey"
+                  class="hidden-field"
+                  tabindex="-1"
+                  autocomplete="off"
                 />
 
-                <!--Security settings-->
                 <input type="hidden" name="_captcha" value="false" />
-                <!--Disable reCAPTCHA if needed-->
+
                 <input
                   type="hidden"
                   name="_subject"
-                  value="New Contact Form Submission"
+                  value="New Booking Request - Makeup Salon Ana"
                 />
-                <!--Subject-->
 
-                <input type="submit" class="btn-submit btn" value="Submit" />
+                <!-- Name -->
+                <div class="form-group">
+                  <label for="name">Name</label>
+
+                  <input
+                    id="name"
+                    type="text"
+                    name="name"
+                    class="form-control"
+                    placeholder="Your name"
+                    required
+                    autocomplete="name"
+                  />
+                </div>
+
+                <!-- Email -->
+                <div class="form-group">
+                  <label for="email">Email</label>
+
+                  <input
+                    id="email"
+                    type="email"
+                    name="email"
+                    class="form-control"
+                    placeholder="Your email"
+                    required
+                    autocomplete="email"
+                  />
+                </div>
+
+                <!-- Phone -->
+                <div class="form-group">
+                  <label for="phone">Phone</label>
+
+                  <input
+                    id="phone"
+                    type="tel"
+                    name="phone"
+                    class="form-control"
+                    placeholder="Your phone number"
+                    autocomplete="tel"
+                  />
+                </div>
+
+                <!-- Event Date -->
+                <div class="form-group">
+                  <label for="event-date">Event Date</label>
+
+                  <input
+                    id="event-date"
+                    type="date"
+                    name="event-date"
+                    class="form-control"
+                  />
+                </div>
+
+                <!-- Message -->
+                <div class="form-group">
+                  <label for="message">Message</label>
+
+                  <textarea
+                    id="message"
+                    name="message"
+                    class="form-control form-message"
+                    placeholder="Tell me about your wedding or event, location and number of people needing services."
+                    required
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-submit">
+                  Send Request
+                </button>
               </form>
             </div>
 
             <div class="contact-right">
-              <img src="images/contact-photo.webp" alt="contact-image" />
+              <img
+                src="images/contact-photo.webp"
+                alt="Bridal hair and makeup styling by Ana Lev"
+                loading="lazy"
+              />
             </div>
           </div>
         </div>
       </section>
 
-      <!--end of contact section -->
+      <!-- ====================================================
+           INSTAGRAM
+           ==================================================== -->
 
-      <!--instagram section-->
-      <section id="insta" class="py-7">
-        <div class="container">
-          <div class="insta-content">
-            <div class="title">
-              <h2>instagram</h2>
-              <a href="#footer" class="btn-down btn-down-white">
-                <i class="fas fa-chevron-down"></i>
-              </a>
-            </div>
+      <section id="insta" class="parallax-section instagram-section">
+        <div
+          class="parallax-bg parallax-bg-insta"
+          aria-hidden="true"
+        ></div>
 
-            <div class="insta-grid grid">
-              <div>
-                <a
-                  href="https://www.instagram.com/p/DExiRMlvkC-/?img_index=1"
-                  target="_blank"
-                  ><img src="images/portfolio2.jpg" alt="Portfolio-Image" />
-                </a>
-              </div>
+        <div class="section-dark-overlay" aria-hidden="true"></div>
 
-              <div>
-                <a
-                  href="https://www.instagram.com/p/DFJEGNOSZKR/?img_index=1"
-                  target="_blank"
-                  ><img src="images/portfolio1.jpg" alt="Portfolio-Image" />
-                </a>
-              </div>
+        <div class="container section-content">
+          <div class="section-heading section-heading-light">
+            <p class="section-label">Follow Along</p>
 
-              <div>
-                <a
-                  href="https://www.instagram.com/p/DFdP60OvLjb/?img_index=1"
-                  target="_blank"
-                  ><img src="images/portfolio3.jpg" alt="Portfolio-Image" />
-                </a>
-              </div>
+            <h2>Instagram</h2>
 
-              <div>
-                <a
-                  href="https://www.instagram.com/p/DA3eEADPCzG/?img_index=1"
-                  target="_blank"
-                  ><img src="images/portfolio5.jpg" alt="Portfolio-Image" />
-                </a>
-              </div>
-            </div>
+            <p class="section-description">
+              See more recent bridal hair, makeup and event styling.
+            </p>
+          </div>
+
+          <div class="insta-grid">
+            <a
+              href="https://www.instagram.com/p/DExiRMlvkC-/?img_index=1"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="insta-item"
+              aria-label="View this post on Instagram"
+            >
+              <img
+                src="images/portfolio2.jpg"
+                alt="Bridal beauty work on Instagram"
+                loading="lazy"
+              />
+
+              <span class="insta-hover">
+                <i class="fab fa-instagram" aria-hidden="true"></i>
+              </span>
+            </a>
+
+            <a
+              href="https://www.instagram.com/p/DFJEGNOSZKR/?img_index=1"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="insta-item"
+              aria-label="View this post on Instagram"
+            >
+              <img
+                src="images/portfolio1.jpg"
+                alt="Bridal makeup work on Instagram"
+                loading="lazy"
+              />
+
+              <span class="insta-hover">
+                <i class="fab fa-instagram" aria-hidden="true"></i>
+              </span>
+            </a>
+
+            <a
+              href="https://www.instagram.com/p/DFdP60OvLjb/?img_index=1"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="insta-item"
+              aria-label="View this post on Instagram"
+            >
+              <img
+                src="images/portfolio3.jpg"
+                alt="Wedding hairstyling work on Instagram"
+                loading="lazy"
+              />
+
+              <span class="insta-hover">
+                <i class="fab fa-instagram" aria-hidden="true"></i>
+              </span>
+            </a>
+
+            <a
+              href="https://www.instagram.com/p/DA3eEADPCzG/?img_index=1"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="insta-item"
+              aria-label="View this post on Instagram"
+            >
+              <img
+                src="images/portfolio5.jpg"
+                alt="Professional beauty styling on Instagram"
+                loading="lazy"
+              />
+
+              <span class="insta-hover">
+                <i class="fab fa-instagram" aria-hidden="true"></i>
+              </span>
+            </a>
+          </div>
+
+          <div class="center-button instagram-button">
+            <a
+              href="https://www.instagram.com/anastasialv89/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-outline"
+            >
+              <i class="fab fa-instagram" aria-hidden="true"></i>
+              Follow on Instagram
+            </a>
           </div>
         </div>
       </section>
-      <!--end of instagram section-->
     </main>
-    <!--end of main content-->
 
-    <!--footer-->
-    <footer id="footer" class="py-7">
+    <!-- ======================================================
+         FOOTER
+         ====================================================== -->
+
+    <footer id="footer">
       <div class="container">
         <div class="footer-content">
-          <div>
-            <h3>Ana Lev</h3>
-            <div><img src="images/portfolio-main.jpg" alt="picture" /></div>
+          <div class="footer-brand">
+            <div class="footer-image">
+              <img
+                src="images/portfolio-main.jpg"
+                alt="Ana Lev"
+                loading="lazy"
+              />
+            </div>
+
+            <h2>Ana Lev</h2>
+
+            <p>
+              Bridal Hair &amp; Makeup Artist
+              <br />
+              Minnesota
+            </p>
           </div>
 
-          <div>
-            <h3>Links</h3>
-            <ul class="flex">
-              <li><a href="#about">About Me</a></li>
-              <li><a href="#work">Work</a></li>
-              <li><a href="#portfolio">Portfolio</a></li>
-              <li><a href="#contact">Contact Me</a></li>
-              <li><a href="#insta">Instagram</a></li>
+          <div class="footer-links">
+            <h3>Explore</h3>
+
+            <ul>
+              <li>
+                <a href="#about">About Me</a>
+              </li>
+
+              <li>
+                <a href="#work">Services</a>
+              </li>
+
+              <li>
+                <a href="#portfolio">Portfolio</a>
+              </li>
+
+              <li>
+                <a href="#contact">Contact</a>
+              </li>
+
+              <li>
+                <a href="#insta">Instagram</a>
+              </li>
             </ul>
+          </div>
+
+          <div class="footer-contact">
+            <h3>Contact</h3>
+
+            <p>
+              <a href="tel:+16122426898">
+                612-242-6898
+              </a>
+            </p>
+
+            <p>
+              <a href="mailto:anastasiyalv1007@gmail.com">
+                anastasiyalv1007@gmail.com
+              </a>
+            </p>
+
+            <div class="footer-social">
+              <a
+                href="https://www.facebook.com/profile.php?id=100023951333590&sk=photos_by"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+              >
+                <i class="fab fa-facebook-f" aria-hidden="true"></i>
+              </a>
+
+              <a
+                href="https://www.instagram.com/anastasialv89/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+              >
+                <i class="fab fa-instagram" aria-hidden="true"></i>
+              </a>
+
+              <a
+                href="https://www.tiktok.com/@anastasialv89"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="TikTok"
+              >
+                <i class="fab fa-tiktok" aria-hidden="true"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </footer>
-    <!--end of footer-->
 
+    <!-- Copyright -->
     <div class="copyright">
-      <a href="https://maxlevus.github.io/Max-Portfolio1/" target="_blank">
-        Copyright © <span id="currentYear"></span> by Maksim Levanovich || All
-        Rights Reserved.
-      </a>
+      <div class="container">
+        <p>
+          Copyright © <span id="currentYear"></span> Ana Lev.
+          All Rights Reserved.
+        </p>
+
+        <p class="developer-credit">
+          Website by
+          <a
+            href="https://maxlevus.github.io/Max-Portfolio1/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Maksim Levanovich
+          </a>
+        </p>
+      </div>
     </div>
 
-    <!--typewriting-->
+    <!-- ======================================================
+         LIGHTBOX
+         ====================================================== -->
+
+    <div
+      id="lightbox-modal"
+      class="lightbox-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-hidden="true"
+      aria-label="Portfolio image preview"
+    >
+      <button
+        class="close-lightbox"
+        type="button"
+        aria-label="Close image"
+      >
+        &times;
+      </button>
+
+      <img id="lightbox-img" alt="" />
+    </div>
+
+    <!-- Existing Typewriter Script -->
     <script src="typewriting-master/typewriting.js"></script>
-    <!--image loads code-->
+
+    <!-- ======================================================
+         WEBSITE JAVASCRIPT
+         ====================================================== -->
+
     <script>
-      document.querySelectorAll(".lightbox").forEach((item) => {
-        item.addEventListener("click", (event) => {
-          event.preventDefault();
-          let imgSrc = item.getAttribute("data-image");
-          let modal = document.getElementById("lightbox-modal");
-          let modalImg = document.getElementById("lightbox-img");
-
-          modal.style.display = "flex";
-          modalImg.src = imgSrc;
-
-          // Ensure image loads properly before displaying
-          modalImg.onload = () => {
-            modalImg.style.display = "block";
-          };
-        });
-      });
-
-      // Close lightbox when clicking outside the image or on the close button
-      document
-        .querySelector(".close-lightbox")
-        .addEventListener("click", () => {
-          document.getElementById("lightbox-modal").style.display = "none";
-        });
-
-      document
-        .getElementById("lightbox-modal")
-        .addEventListener("click", (event) => {
-          if (event.target === event.currentTarget) {
-            document.getElementById("lightbox-modal").style.display = "none";
-          }
-        });
+      /*
+       * =============================================
+       * COPYRIGHT YEAR
+       * =============================================
+       */
 
       document.addEventListener("DOMContentLoaded", function () {
         const yearElement = document.getElementById("currentYear");
+
         if (yearElement) {
           yearElement.textContent = new Date().getFullYear();
         }
       });
+
+      /*
+       * =============================================
+       * PORTFOLIO LIGHTBOX
+       * =============================================
+       */
+
+      const lightboxModal =
+        document.getElementById("lightbox-modal");
+
+      const lightboxImage =
+        document.getElementById("lightbox-img");
+
+      const closeLightboxButton =
+        document.querySelector(".close-lightbox");
+
+      const lightboxButtons =
+        document.querySelectorAll(".lightbox");
+
+      function openLightbox(button) {
+        const imageSource =
+          button.getAttribute("data-image");
+
+        const thumbnail =
+          button.querySelector("img");
+
+        lightboxImage.src = imageSource;
+
+        lightboxImage.alt =
+          thumbnail && thumbnail.alt
+            ? thumbnail.alt
+            : "Portfolio image";
+
+        lightboxModal.classList.add("open");
+
+        lightboxModal.setAttribute(
+          "aria-hidden",
+          "false"
+        );
+
+        document.body.classList.add("no-scroll");
+
+        closeLightboxButton.focus();
+      }
+
+      function closeLightbox() {
+        lightboxModal.classList.remove("open");
+
+        lightboxModal.setAttribute(
+          "aria-hidden",
+          "true"
+        );
+
+        document.body.classList.remove("no-scroll");
+      }
+
+      lightboxButtons.forEach(function (button) {
+        button.addEventListener("click", function () {
+          openLightbox(button);
+        });
+      });
+
+      closeLightboxButton.addEventListener(
+        "click",
+        closeLightbox
+      );
+
+      lightboxModal.addEventListener(
+        "click",
+        function (event) {
+          if (event.target === lightboxModal) {
+            closeLightbox();
+          }
+        }
+      );
+
+      document.addEventListener(
+        "keydown",
+        function (event) {
+          if (
+            event.key === "Escape" &&
+            lightboxModal.classList.contains("open")
+          ) {
+            closeLightbox();
+          }
+        }
+      );
+
+      /*
+       * =============================================
+       * IPHONE / SAFARI PARALLAX FIX
+       * =============================================
+       *
+       * We intentionally do NOT use:
+       *
+       * background-attachment: fixed;
+       *
+       * Safari on iPhone handles it inconsistently.
+       *
+       * Instead, each background is an independent
+       * viewport-sized layer.
+       *
+       * As the section scrolls, JavaScript moves the
+       * background layer in the opposite direction.
+       *
+       * Result:
+       * background stays visually fixed while the
+       * section content moves over it.
+       */
+
+      const parallaxSections =
+        document.querySelectorAll(
+          ".parallax-section"
+        );
+
+      let parallaxTicking = false;
+
+      function updateParallax() {
+        const reduceMotion =
+          window.matchMedia(
+            "(prefers-reduced-motion: reduce)"
+          ).matches;
+
+        parallaxSections.forEach(
+          function (section) {
+            const background =
+              section.querySelector(
+                ".parallax-bg"
+              );
+
+            if (!background) {
+              return;
+            }
+
+            if (reduceMotion) {
+              background.style.transform =
+                "translate3d(0, 0, 0)";
+
+              return;
+            }
+
+            const rect =
+              section.getBoundingClientRect();
+
+            const viewportHeight =
+              window.innerHeight;
+
+            /*
+             * Only calculate while the section
+             * is close to / inside the viewport.
+             */
+            if (
+              rect.bottom > -viewportHeight &&
+              rect.top < viewportHeight * 2
+            ) {
+              const offset = -rect.top;
+
+              background.style.transform =
+                "translate3d(0, " +
+                offset +
+                "px, 0)";
+            }
+          }
+        );
+
+        parallaxTicking = false;
+      }
+
+      function requestParallaxUpdate() {
+        if (!parallaxTicking) {
+          window.requestAnimationFrame(
+            updateParallax
+          );
+
+          parallaxTicking = true;
+        }
+      }
+
+      window.addEventListener(
+        "scroll",
+        requestParallaxUpdate,
+        { passive: true }
+      );
+
+      window.addEventListener(
+        "resize",
+        requestParallaxUpdate
+      );
+
+      window.addEventListener(
+        "orientationchange",
+        requestParallaxUpdate
+      );
+
+      /*
+       * Initial calculation.
+       */
+      requestParallaxUpdate();
     </script>
   </body>
 </html>
