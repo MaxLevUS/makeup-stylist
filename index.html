@@ -741,100 +741,118 @@
               -->
 
               <form
-                class="contact-form"
-                action="https://formsubmit.co/anastasiyalv1007@gmail.com"
-                method="POST"
-              >
-                <!-- Spam protection -->
-                <input
-                  type="text"
-                  name="_honey"
-                  class="hidden-field"
-                  tabindex="-1"
-                  autocomplete="off"
-                />
+  id="contactForm"
+  class="contact-form"
+  action="https://formsubmit.co/ajax/anastasiyalv1007@gmail.com"
+  method="POST"
+>
+  <!-- Spam protection -->
+  <input
+    type="text"
+    name="_honey"
+    class="hidden-field"
+    tabindex="-1"
+    autocomplete="off"
+  />
 
-                <input type="hidden" name="_captcha" value="false" />
+  <input type="hidden" name="_captcha" value="false" />
 
-                <input
-                  type="hidden"
-                  name="_subject"
-                  value="New Booking Request - Makeup Salon Ana"
-                />
+  <input
+    type="hidden"
+    name="_subject"
+    value="New Booking Request - Makeup Salon Ana"
+  />
 
-                <!-- Name -->
-                <div class="form-group">
-                  <label for="name">Name</label>
+  <input
+    type="hidden"
+    name="_template"
+    value="table"
+  />
 
-                  <input
-                    id="name"
-                    type="text"
-                    name="name"
-                    class="form-control"
-                    placeholder="Your name"
-                    required
-                    autocomplete="name"
-                  />
-                </div>
+  <!-- Name -->
+  <div class="form-group">
+    <label for="name">Name</label>
 
-                <!-- Email -->
-                <div class="form-group">
-                  <label for="email">Email</label>
+    <input
+      id="name"
+      type="text"
+      name="name"
+      class="form-control"
+      placeholder="Your name"
+      required
+      autocomplete="name"
+    />
+  </div>
 
-                  <input
-                    id="email"
-                    type="email"
-                    name="email"
-                    class="form-control"
-                    placeholder="Your email"
-                    required
-                    autocomplete="email"
-                  />
-                </div>
+  <!-- Email -->
+  <div class="form-group">
+    <label for="email">Email</label>
 
-                <!-- Phone -->
-                <div class="form-group">
-                  <label for="phone">Phone</label>
+    <input
+      id="email"
+      type="email"
+      name="email"
+      class="form-control"
+      placeholder="Your email"
+      required
+      autocomplete="email"
+    />
+  </div>
 
-                  <input
-                    id="phone"
-                    type="tel"
-                    name="phone"
-                    class="form-control"
-                    placeholder="Your phone number"
-                    autocomplete="tel"
-                  />
-                </div>
+  <!-- Phone -->
+  <div class="form-group">
+    <label for="phone">Phone</label>
 
-                <!-- Event Date -->
-                <div class="form-group">
-                  <label for="event-date">Event Date</label>
+    <input
+      id="phone"
+      type="tel"
+      name="phone"
+      class="form-control"
+      placeholder="Your phone number"
+      autocomplete="tel"
+    />
+  </div>
 
-                  <input
-                    id="event-date"
-                    type="date"
-                    name="event-date"
-                    class="form-control"
-                  />
-                </div>
+  <!-- Event Date -->
+  <div class="form-group">
+    <label for="event-date">Event Date</label>
 
-                <!-- Message -->
-                <div class="form-group">
-                  <label for="message">Message</label>
+    <input
+      id="event-date"
+      type="date"
+      name="event-date"
+      class="form-control"
+    />
+  </div>
 
-                  <textarea
-                    id="message"
-                    name="message"
-                    class="form-control form-message"
-                    placeholder="Tell me about your wedding or event, location and number of people needing services."
-                    required
-                  ></textarea>
-                </div>
+  <!-- Message -->
+  <div class="form-group">
+    <label for="message">Message</label>
 
-                <button type="submit" class="btn btn-submit">
-                  Send Request
-                </button>
-              </form>
+    <textarea
+      id="message"
+      name="message"
+      class="form-control form-message"
+      placeholder="Tell me about your wedding or event, location and number of people needing services."
+      required
+    ></textarea>
+  </div>
+
+  <button
+    id="submitButton"
+    type="submit"
+    class="btn btn-submit"
+  >
+    Send Request
+  </button>
+
+  <div
+    id="formStatus"
+    class="form-status"
+    role="status"
+    aria-live="polite"
+  ></div>
+</form>
             </div>
 
             <div class="contact-right">
